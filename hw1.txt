@@ -1,0 +1,93 @@
+Домашка №1 – группа 19
+=============================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir dir1
+3) Зайти в папку - cd dir1
+
+Script:
+
+gedit myscript.sh
+
+#!/bin/bash
+cd dir1
+pwd
+
+Запустить:
+
+chmod +x myscript.sh
+./myscript.sh
+
+4) Создать 3 папки – mkdir dir1 dir2 dir3 или mkdir {dir1,dir2,dir3} или папка с вложенными папками mkdir –p user/subdir1/subsubdir1/subsubsubdir1
+
+Script:
+#!/bin/bash
+mkdir {dir1,dir2,dir3} 
+ls
+
+5) Зайти в любоую папку – cd ~/dir1
+Script:
+#!/bin/bash
+cd ~/dir1
+pwd
+
+6) Создать 5 файлов (3 txt, 2 json) – touch file1.txt file2.txt file3.txt file4.json file5.json
+
+Script:
+#!/bin/bash
+touch file1.txt file2.txt file3.txt file4.json file5.json
+ls
+
+7) Создать 3 папки – mkdir –p user/dir1/{subdir1,subdir2,subdir3}
+
+Script:
+#!/bin/bash
+mkdir –p user/dir1/{subdir1,subdir2,subdir3}
+ls
+
+8) Вывести список содержимого папки – ls –la
+
+Script:
+#!/bin/bash
+ls -la
+
+9) + Открыть любой txt файл – nano file.txt (less file.txt)
+10) + написать туда что-нибудь, любой текст. – bla bla
+11) + сохранить и выйти – ctr +x enter Y
+12) Выйти из папки на уровень выше – cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку – mv file1.txt file2.txt Desktop/
+
+Script:
+#!/bin/bash
+mv file1.txt file2.txt Desktop/
+ls
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку – cp {file1.txt,file4.json} Desktop/
+15) Найти файл по имени – locate file1.txt (если не работает – сначала установить mlocate: sudo apt install mlocate)
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает – 
+grep “pattern” /path/to/log (найти все паттерны)
+tail -f path/to/log | grep search_term (найти последнее упоминание паттерна)
+
+17) вывести несколько первых строк из текстового файла - head -2 file1.txt
+18) вывести несколько последних строк из текстового файла – tail -2 file1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает – less filename (q to exit)
+20) вывести дату и время
+
+#!/bin/bash
+
+dt=$(date '+%d/%m/%Y %H:%M:%S');
+echo "$dt"
+
+===========
+Отправить http запрос на сервер. 
+Simple GET Request
+curl https://api.quarantine.country/api/v1/regions
+
+Download life 
+curl –O https://api.quarantine.country/api/v1/regions
+
+Download and save as txt document
+сurl –o https://api.quarantine.country/api/v1/regions
+
+============================
+
