@@ -1,0 +1,55 @@
+1) Создайте 3 пользователя
+$ sudo adduser user1	//create new user with password
+$ sudo adduser user2 
+$ sudo adduser user3
+
+$ getent passwd		    //list all users
+		
+2) Создайте 2 группы (группа с админскими правами и группа с правами доступа к некоторым папкам и запуском скриптов в этой папке)
+ - группа с админ правами уже есть в системе по умолчанию (sudo), создаем только группу для юзеров:
+
+$ sudo groupadd group2_users	//create group for users
+$ less /etc/group		    //open file with all groups
+		
+3) Добавить 1-го пользователя в группу админ и проверить работают ли его админские права
+$ sudo usermod -aG sudo user1	add user1 to sudo group (admin rights)
+$ groups user1			//list groups for user1
+$ su user1			//switch user to user1
+$ sudo -l -U user1 		//check if user1 has admin rights (we should see ALL ALL ALL...)
+		
+4) Добавить 2-х оставшихся пользователей в группу с обрезанными правами. Проверить что они могут делать что не могут
+$ sudo usermod -a -G group2_users user2	          //add user2 to group2_users (no admin rights)
+$ sudo usermod -a -G group2_users user3	          //add user2 to group2_users (no admin rights)
+$ groups user2			                      //list groups for user2
+$ groups user3			                      //list groups for user3
+$ su user2			//switch user to user2
+$ sudo -l -U user2 		//check if user2 has admin rights
+
+5) Изучите что такое Screen
+	
+http://www.gnu.org/software/screen/manual/screen.html
+screen is a window manager that multiplexes a physical terminal between several processes, 
+we can open as many screens as we need, switch between them, detach them, list them, and reconnect to them
+$ sudo apt install screen
+
+$ sudo apt install screen	    //install 
+		
+6) Запустить несколько Screen 	
+$ screen			//start screen session
+$ top 				//start top app (or any other app) as an example
+ctrl-a (lift hands) c		//create a new win (new instance of terminal)
+ctrl-a "			//show current windows (all screens/instances of terminal)
+$ screen –ls 			//list current screen sessions
+
+7) Детачить скрины	
+ctrl-a d	//detach to a new screen session
+
+8) Переходить между скринами	
+ctrl-a p 	//go to previous win
+ctrl-a n	//go to next win
+
+9) Выключать скрины	
+ctrl-a \	      //kill all windows and terminate screen
+ctrl-a k	      //kill the current win
+or 
+ctrl-k	
