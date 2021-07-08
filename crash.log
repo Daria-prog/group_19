@@ -1,0 +1,52 @@
+2021-07-08 17:47:42.623 10628-10628/com.android.todolist I/ndroid.todolis: Not late-enabling -Xcheck:jni (already on)
+2021-07-08 17:47:42.676 10628-10628/com.android.todolist E/ndroid.todolis: Unknown bits set in runtime_flags: 0x8000
+2021-07-08 17:47:42.677 10628-10628/com.android.todolist W/ndroid.todolis: Unexpected CPU variant for X86 using defaults: x86
+2021-07-08 17:47:43.279 10628-10665/com.android.todolist D/libEGL: Emulator has host GPU support, qemu.gles is set to 1.
+2021-07-08 17:47:43.281 10628-10665/com.android.todolist W/libc: Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+2021-07-08 17:47:43.266 10628-10628/com.android.todolist W/RenderThread: type=1400 audit(0.0:66): avc: denied { write } for name="property_service" dev="tmpfs" ino=8450 scontext=u:r:untrusted_app_27:s0:c133,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.todolist
+2021-07-08 17:47:43.359 10628-10665/com.android.todolist D/libEGL: loaded /vendor/lib/egl/libEGL_emulation.so
+2021-07-08 17:47:43.367 10628-10665/com.android.todolist D/libEGL: loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+2021-07-08 17:47:43.378 10628-10665/com.android.todolist D/libEGL: loaded /vendor/lib/egl/libGLESv2_emulation.so
+2021-07-08 17:47:43.573 10628-10628/com.android.todolist W/ndroid.todolis: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+2021-07-08 17:47:43.574 10628-10628/com.android.todolist W/ndroid.todolis: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+2021-07-08 17:47:44.179 10628-10663/com.android.todolist D/HostConnection: HostConnection::get() New Host Connection established 0xdfe4d190, tid 10663
+2021-07-08 17:47:44.190 10628-10663/com.android.todolist D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_async_frame_commands ANDROID_EMU_gles_max_version_2 
+2021-07-08 17:47:44.209 10628-10663/com.android.todolist W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2021-07-08 17:47:44.251 10628-10663/com.android.todolist D/EGL_emulation: eglCreateContext: 0xdfe1a120: maj 2 min 0 rcv 2
+2021-07-08 17:47:44.265 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:47:44.299 10628-10663/com.android.todolist W/Gralloc3: mapper 3.x is not supported
+2021-07-08 17:47:44.306 10628-10663/com.android.todolist D/HostConnection: createUnique: call
+2021-07-08 17:47:44.307 10628-10663/com.android.todolist D/HostConnection: HostConnection::get() New Host Connection established 0xdfe4d2d0, tid 10663
+2021-07-08 17:47:44.308 10628-10663/com.android.todolist D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_async_frame_commands ANDROID_EMU_gles_max_version_2 
+2021-07-08 17:47:44.309 10628-10663/com.android.todolist D/eglCodecCommon: allocate: Ask for block of size 0x1000
+2021-07-08 17:47:44.309 10628-10663/com.android.todolist D/eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff6c7000 size 0x2000
+2021-07-08 17:47:44.365 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:47:44.741 10628-10628/com.android.todolist I/Choreographer: Skipped 37 frames!  The application may be doing too much work on its main thread.
+2021-07-08 17:47:48.509 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:47:48.514 10628-10628/com.android.todolist W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@530926e
+2021-07-08 17:47:48.771 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:47:48.798 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:47:48.832 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:48:04.696 10628-10628/com.android.todolist I/System.out: Install Android Studio en 7
+2021-07-08 17:48:05.766 10628-10628/com.android.todolist I/System.out: task 2 en 7
+2021-07-08 17:48:07.237 10628-10628/com.android.todolist I/System.out: asdsa en 6
+2021-07-08 17:48:10.373 10628-10628/com.android.todolist E/ndroid.todolis: Invalid ID 0x00000000.
+2021-07-08 17:48:10.375 10628-10628/com.android.todolist I/AssistStructure: Flattened final assist data: 1580 bytes, containing 1 windows, 10 views
+2021-07-08 17:48:38.339 10628-10628/com.android.todolist I/System.out: jhgdss en 5
+2021-07-08 17:48:41.299 10628-10628/com.android.todolist I/System.out: asdfdf en 5
+2021-07-08 17:48:42.269 10628-10628/com.android.todolist I/System.out: asdsa en 6
+2021-07-08 17:48:43.489 10628-10628/com.android.todolist I/System.out: task1 en 7
+2021-07-08 17:48:50.138 10628-10628/com.android.todolist W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@6e53b44
+2021-07-08 17:48:50.319 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:48:50.332 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:48:50.367 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:48:50.494 10628-10663/com.android.todolist I/chatty: uid=10133(com.android.todolist) RenderThread identical 9 lines
+2021-07-08 17:48:50.504 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:48:50.771 10628-10628/com.android.todolist D/AutofillManager: onActivityFinishing(): calling cancelLocked()
+2021-07-08 17:48:52.367 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:48:52.375 10628-10628/com.android.todolist W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@856f0b6
+2021-07-08 17:48:52.446 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:48:52.464 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:48:52.486 10628-10663/com.android.todolist D/EGL_emulation: eglMakeCurrent: 0xdfe1a120: ver 2 0 (tinfo 0xdfe0f100)
+2021-07-08 17:48:53.881 10628-10628/com.android.todolist E/ndroid.todolis: Invalid ID 0x00000000.
+2021-07-08 17:48:53.885 10628-10628/com.android.todolist I/AssistStructure: Flattened final assist data: 1580 bytes, containing 1 windows, 10 views
